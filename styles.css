@@ -3,58 +3,64 @@ body {
     background: #F0F2D9;
 }
 
-.btn {
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: initial;
+}
+
+.pill {
     display: inline-block;
-    margin: 1em;
+    margin: 1em 0.5em;
     text-transform: uppercase;
     padding: .5em 1.25em;
     background: none;
     border: none;
-    transition: color 300ms cubic-bezier(.86, 0, .07, 1);
+    transition: color 200ms ease;
     color: black;
     font-size: 12px;
     cursor: pointer;
     position: relative;
 }
 
-.btn:hover {
-    color: white;
-}
-
-.btn::after {
+.pill-banner {
     position: absolute;
-    content: '';
     top: 0;
     left: 0;
     width: 10px;
     height: 100%;
     transform-origin: left;
-    transition: width 300ms cubic-bezier(.86, 0, .07, 1);
+    transition: width 300ms ease;
     z-index: -1;
 }
 
-.btn:hover::after {
+.pill:hover, .toggled-pill {
+    color: white;
+}
+
+.pill:hover .pill-banner,
+.toggled-pill .pill-banner {
     width: 100%;
 }
 
-.red::after {
+.red .pill-banner {
     background-color: #AC4E39;
 }
 
-.blue::after {
+.blue .pill-banner {
     background-color: #2E5F8A;
 }
 
-.green::after {
+.green .pill-banner {
     background-color: #62CB83;
 }
 
-.yellow::after {
+.yellow .pill-banner {
     background-color: #A48437;
 }
 
-.gray::after {
-    background-color: #030401;
+.gray .pill-banner {
+    background-color: #323232;
 }
 
 a {

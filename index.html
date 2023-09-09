@@ -1,12 +1,40 @@
 <!DOCTYPE html>
+
 <head>
+  <title>Pills</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <button class="btn red">Software Engineering</button>
-<a class="btn red">Software Engineering</a>
-<p>
-  Based on O' Reilly web design patterns found here
-  <a href="https://www.oreilly.com/">O' Reilly</a>.
-</p>
+  <h1>Categories</h1>
+  <p>Select desired categories below:</p>
+
+  <div class="container">
+    <button class="pill red" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>C/C++</button>
+    <button class="pill green" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>Python</button>
+    <button class="pill red" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>Java</button>
+    <button class="pill blue" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>JavaScript</button>
+    <button class="pill blue" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>HTML</button>
+    <button class="pill blue" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>CSS</button>
+    <button class="pill yellow" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>Lisp</button>
+    <button class="pill green" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>Perl</button>
+    <button class="pill green" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>TypeScript</button>
+    <button class="pill red" onclick="pillClicked(event)">
+      <span class="pill-banner"></span>Go</button>
+  </div>
+
+  <hr>
+  <p>Based on an animation once seen at
+    <a href="https://www.oreilly.com/">O' Reilly</a>.
+  </p>
+  <script src="script.js"></script>
 </body>
